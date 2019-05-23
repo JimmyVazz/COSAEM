@@ -7,7 +7,7 @@ if ($connect) {
 		$correo= $_POST ['correo'];
         $servicio= $_POST ['servicio'];
         $mensaje= $_POST ['mensaje'];
-        $folio=12345;
+        $folio = rand(1000, 3000);
 
 
 		$consulta="insert into buzon_de_entrada values ('$nombre','$correo','$mensaje','$servicio', '$folio')";
@@ -16,11 +16,12 @@ if ($connect) {
 		
 		if ($resultado) {
 			echo "Mensaje enviado. <br />";
+			header('Location: Succes.html');
 		}
 		else {
             echo "error en la ejecución de la consulta. <br />";
+            header('Location: Fail.html');
             
-            echo($resultado);
 		}
 		
 }
