@@ -30,12 +30,6 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
-  <!-- =======================================================
-    Theme Name: Plato
-    Theme URL: https://bootstrapmade.com/plato-responsive-bootstrap-website-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
 </head>
 
 <body>
@@ -141,28 +135,29 @@
           <div class="spacer30">
           </div>
 
-          <div id="sendmessage">  </div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          
+          <form action="registro.php" method="post" role="form" >
             <div class="row">
+                
               <div class="span4 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Por favor, por lo menos escriba 4 palabras" />
+                <input type="text" name="nombre" class="form-control" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Por favor, por lo menos escriba 4 palabras" />
                 <div class="validation"></div>
               </div>
 
               <div class="span4 form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo" data-rule="email" data-msg="Ingrese un correo valido" />
+                <input type="email" class="form-control" name="correo" id="email" placeholder="Tu correo" data-rule="email" data-msg="Ingrese un correo valido" />
                 <div class="validation"></div>
               </div>
               <div class="span8 form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Servicio" data-rule="minlen:4" data-msg="Por favor, por lo menos escriba uno o dos servicios" />
+                <input type="text" class="form-control" name="servicio" id="subject" placeholder="Servicio" data-rule="minlen:4" data-msg="Por favor, por lo menos escriba uno o dos servicios" />
                 <div class="validation"></div>
               </div>
               <div class="span8 form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="" placeholder="Cuentanos que necesitas"></textarea>
+                <textarea class="form-control" name="mensaje" rows="5" data-rule="required" data-msg="" placeholder="Cuentanos que necesitas"></textarea>
                 <div class="validation"></div>
                 <div class="text-center">
-                  <a href="mailto:ejemplo@gmail.com">Enviar mensaje</a>
+                  <button class="btn btn-color btn-rounded" name = "enviar"type="submit">Enviar mensaje</button>
+
                 </div>
               </div>
             </div>
